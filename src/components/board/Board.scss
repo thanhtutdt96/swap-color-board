@@ -1,0 +1,21 @@
+.Board {
+  h1 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  &__table {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 40px;
+    width: 610px;
+    max-width: 100%;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, .5);
+  }
+}
