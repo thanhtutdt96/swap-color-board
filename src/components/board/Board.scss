@@ -1,4 +1,9 @@
 .Board {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
   h1 {
     margin-bottom: 0;
     text-align: center;
@@ -9,13 +14,29 @@
   }
 
   &__table {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     margin-top: 40px;
     width: 610px;
+    aspect-ratio: 1/1;
     max-width: 100%;
     border-width: 1px 0 0 1px;
     border-style: solid;
     border-color: rgba(0, 0, 0, .5);
   }
+
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
+.Board__table-wrapper {
+  display: flex;
+  justify-content: center;
 }
