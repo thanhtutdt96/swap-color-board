@@ -3,6 +3,7 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
 
   h1 {
     margin-bottom: 0;
@@ -18,7 +19,6 @@
     grid-template-columns: repeat(8, 1fr);
     margin-top: 40px;
     width: 610px;
-    aspect-ratio: 1/1;
     max-width: 100%;
     border-width: 1px 0 0 1px;
     border-style: solid;
